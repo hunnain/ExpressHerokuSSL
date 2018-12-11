@@ -7,6 +7,8 @@ app.use(sslRedirect());
 
 app.get('/', function(req, res){
   res.send('hello world');
+  console.log("Runnning on 30002")
 });
 
+console.log("Runnning on 30002")
 app.listen(3002);
