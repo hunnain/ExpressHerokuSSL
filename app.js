@@ -11,4 +11,5 @@ app.get('/', function(req, res){
 });
 
 console.log("Runnning on 30002")
-app.listen(3002);
+const PORT = process.env.PORT;
+app.listen(PORT || "0.0.0.0");
